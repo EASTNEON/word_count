@@ -1,0 +1,8 @@
+<h1>统计结果，文本总字数为{{ count }}字</h1>
+<h2>你的文本</h2>
+{{ text }}
+<br>
+{% for word,count in sorted %}<! -- 其中Word,count可是任意字符，能与sorted中每个参数对应即可-->
+{{ word }} - {{ count }}
+<br>
+{% endfor %}
